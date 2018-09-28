@@ -1,0 +1,11 @@
+version: '2'
+services:
+  jekyll:
+    build: .
+    container_name: jekyll
+    ports:
+      - "8496:8496"
+    volumes:
+      - "/Volumes/dev/jekyll:/var/jekyll"
+    extra_hosts:
+      - jekyll.satie:127.0.0.1
