@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
   jekyll:
     build: .
@@ -7,5 +7,9 @@ services:
       - "8496:8496"
     volumes:
       - "/Volumes/dev/jekyll:/var/jekyll"
-    extra_hosts:
-      - jekyll.satie:127.0.0.1
+#    working_dir: /var/jekyll/journal
+#    environment:
+#      BUNDLE_APP_CONFIG
+#      BUNDLE_PATH: BUNDLE_APP_CONFIG
+#    extra_hosts:
+#      - jekyll.satie:127.0.0.1
