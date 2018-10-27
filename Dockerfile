@@ -15,13 +15,8 @@ RUN apt-get update \
  && apt-get clean \
  && rm -r /var/lib/apt/lists/*
 
-#RUN dpkg-reconfigure locales && \
-#  locale-gen C.UTF-8 && \
-#  /usr/sbin/update-locale LANG=C.UTF-8
-# Install needed default locale for Makefly
 RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
     locale-gen
-# Set default locale for the environment
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
