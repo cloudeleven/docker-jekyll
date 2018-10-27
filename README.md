@@ -1,2 +1,2 @@
 # docker-jekyll
-Jekyll Docker image for x86-64
+Docker image of Jekyll with Chalk and s3_website for x86-64.
