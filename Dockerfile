@@ -6,6 +6,7 @@ RUN apt-get update \
     build-essential \
     ruby-dev \
     rubygems \
+    openjdk-8-jre-headless \
     vim \
     zlib1g-dev \
     npm \
