@@ -6,9 +6,7 @@ RUN apt-get update \
     build-essential \
     ruby-dev \
     rubygems \
-    openjdk-8-jre-headless \
     vim \
-    git \
     zlib1g-dev \
     npm \
     locales \
@@ -21,7 +19,7 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
-RUN gem install --no-document jekyll bundler s3_website
+RUN gem install --no-document bundler s3_website
 
 ENV JEKYLLPATH /var/jekyll
 
